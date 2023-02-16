@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 14,
             "patches": [
                 {
                     "date": 1676589299865,
@@ -36,6 +36,34 @@
                 {
                     "date": 1676590632866,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-console.log('vc')\r\n+console.log('vcvd')\r\n"
+                },
+                {
+                    "date": 1676591206231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,28 @@\n-console.log('vcvd')\r\n+// import './styles/style.styl'\r\n+import Lenis from '@studio-freight/lenis'\r\n+import gsap from 'gsap'\r\n+// import CSSRulePlugin from 'gsapsplit-type/CSSRulePlugin'\r\n+// import CustomEase from 'gsap/CustomEase'\r\n+// import ScrollToPlugin from 'gsap/ScrollToPlugin '\r\n+import ScrollTrigger from 'gsap/ScrollTrigger '\r\n+import $ from 'jquery'\r\n+import SplitType from 'split-type'\r\n+\r\n+const lenis = new Lenis({\r\n+  duration: 1.2,\r\n+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou\r\n+  direction: 'vertical', // vertical, horizontal\r\n+  gestureDirection: 'vertical', // vertical, horizontal, both\r\n+  smooth: true,\r\n+  mouseMultiplier: 1.3,\r\n+  smoothTouch: false,\r\n+  touchMultiplier: 2,\r\n+  infinite: false,\r\n+})\r\n+\r\n+function raf(time) {\r\n+  lenis.raf(time)\r\n+  requestAnimationFrame(raf)\r\n+}\r\n+\r\n+requestAnimationFrame(raf)\r\n"
+                },
+                {
+                    "date": 1676591225641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,4 +25,5 @@\n   requestAnimationFrame(raf)\r\n }\r\n \r\n requestAnimationFrame(raf)\r\n+console.log('cvx')\r\n"
+                },
+                {
+                    "date": 1676591269208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,5 +25,5 @@\n   requestAnimationFrame(raf)\r\n }\r\n \r\n requestAnimationFrame(raf)\r\n-console.log('cvx')\r\n+console.log('cvxvc')\r\n"
+                },
+                {
+                    "date": 1676591343719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,5 +25,5 @@\n   requestAnimationFrame(raf)\r\n }\r\n \r\n requestAnimationFrame(raf)\r\n-console.log('cvxvc')\r\n+console.log('vv')\r\n"
+                },
+                {
+                    "date": 1676591374159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,5 +25,5 @@\n   requestAnimationFrame(raf)\r\n }\r\n \r\n requestAnimationFrame(raf)\r\n-console.log('vv')\r\n+console.log('vsv')\r\n"
+                },
+                {
+                    "date": 1676591412594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,5 +25,5 @@\n   requestAnimationFrame(raf)\r\n }\r\n \r\n requestAnimationFrame(raf)\r\n-console.log('vsv')\r\n+console.log('vfsv')\r\n"
+                },
+                {
+                    "date": 1676591499863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,6 +24,24 @@\n   lenis.raf(time)\r\n   requestAnimationFrame(raf)\r\n }\r\n \r\n-requestAnimationFrame(raf)\r\n+requestAnimationFrame(raf)(\r\n+  // faq -------------------------------------------\r\n+  (function ($) {\r\n+    //    'use strict';\r\n+\r\n+    $('.accordion__title').on('click', function () {\r\n+      $(this).children('.accordion__arrow').toggleClass('rotate')\r\n+      $('.accordion__arrow').not($(this).children('.accordion__arrow')).removeClass('rotate')\r\n+      $(this).next().slideToggle(800)\r\n+      $('.accordion__text').not($(this).next()).slideUp('fast')\r\n+\r\n+      // $(this).offset().top-\"distance from top\"}, \"scroll speed\");}, \"animation delay depending on inner content length\");\r\n+      setTimeout(() => {\r\n+        $('html').animate({ scrollTop: $(this).offset().top - 180 }, 800)\r\n+      }, 400)\r\n+    })\r\n+  })(jQuery)\r\n+)\r\n+\r\n console.log('vfsv')\r\n"
                 }
             ],
             "date": 1676589299865,
