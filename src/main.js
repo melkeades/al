@@ -6,6 +6,7 @@ import gsap from 'gsap'
 // import ScrollToPlugin from 'gsap/ScrollToPlugin '
 import ScrollTrigger from 'gsap/ScrollTrigger '
 import $ from 'jquery'
+import jQuery from 'jquery'
 import SplitType from 'split-type'
 
 const lenis = new Lenis({
