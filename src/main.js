@@ -26,23 +26,20 @@ function raf(time) {
   requestAnimationFrame(raf)
 }
 
-requestAnimationFrame(raf)(
-  // faq -------------------------------------------
-  (function ($) {
-    //    'use strict';
+console.log('vfvff')
+requestAnimationFrame(raf)
+//
+// faq -------------------------------------------
+;(function ($) {
+  $('.accordion__title').on('click', function () {
+    $(this).children('.accordion__arrow').toggleClass('rotate')
+    $('.accordion__arrow').not($(this).children('.accordion__arrow')).removeClass('rotate')
+    $(this).next().slideToggle(800)
+    $('.accordion__text').not($(this).next()).slideUp('fast')
 
-    $('.accordion__title').on('click', function () {
-      $(this).children('.accordion__arrow').toggleClass('rotate')
-      $('.accordion__arrow').not($(this).children('.accordion__arrow')).removeClass('rotate')
-      $(this).next().slideToggle(800)
-      $('.accordion__text').not($(this).next()).slideUp('fast')
-
-      // $(this).offset().top-"distance from top"}, "scroll speed");}, "animation delay depending on inner content length");
-      setTimeout(() => {
-        $('html').animate({ scrollTop: $(this).offset().top - 180 }, 800)
-      }, 400)
-    })
-  })(jQuery)
-)
-
-console.log('vfsv')
+    // $(this).offset().top-"distance from top"}, "scroll speed");}, "animation delay depending on inner content length");
+    setTimeout(() => {
+      $('html').animate({ scrollTop: $(this).offset().top - 180 }, 800)
+    }, 400)
+  })
+})(jQuery)

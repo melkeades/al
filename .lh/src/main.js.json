@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 15,
+            "activePatchIndex": 32,
             "patches": [
                 {
                     "date": 1676589299865,
@@ -68,6 +68,74 @@
                 {
                     "date": 1676591863613,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n // import CustomEase from 'gsap/CustomEase'\r\n // import ScrollToPlugin from 'gsap/ScrollToPlugin '\r\n import ScrollTrigger from 'gsap/ScrollTrigger '\r\n import $ from 'jquery'\r\n+import jQuery from 'jquery'\r\n import SplitType from 'split-type'\r\n \r\n const lenis = new Lenis({\r\n   duration: 1.2,\r\n"
+                },
+                {
+                    "date": 1676592077945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   lenis.raf(time)\r\n   requestAnimationFrame(raf)\r\n }\r\n \r\n-requestAnimationFrame(raf)(\r\n+requestAnimationFrame(raf)\r\n   // faq -------------------------------------------\r\n   (function ($) {\r\n     //    'use strict';\r\n \r\n"
+                },
+                {
+                    "date": 1676592113081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,7 +42,7 @@\n         $('html').animate({ scrollTop: $(this).offset().top - 180 }, 800)\r\n       }, 400)\r\n     })\r\n   })(jQuery)\r\n-)\r\n \r\n+\r\n console.log('vfsv')\r\n"
+                },
+                {
+                    "date": 1676592266903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,13 +25,11 @@\n   lenis.raf(time)\r\n   requestAnimationFrame(raf)\r\n }\r\n \r\n-requestAnimationFrame(raf)\r\n+requestAnimationFrame(raf)(\r\n   // faq -------------------------------------------\r\n-  (function ($) {\r\n-    //    'use strict';\r\n-\r\n+  function ($) {\r\n     $('.accordion__title').on('click', function () {\r\n       $(this).children('.accordion__arrow').toggleClass('rotate')\r\n       $('.accordion__arrow').not($(this).children('.accordion__arrow')).removeClass('rotate')\r\n       $(this).next().slideToggle(800)\r\n@@ -41,8 +39,8 @@\n       setTimeout(() => {\r\n         $('html').animate({ scrollTop: $(this).offset().top - 180 }, 800)\r\n       }, 400)\r\n     })\r\n-  })(jQuery)\r\n+  }\r\n+)(jQuery)\r\n \r\n-\r\n console.log('vfsv')\r\n"
+                },
+                {
+                    "date": 1676592325150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,5 +42,5 @@\n     })\r\n   }\r\n )(jQuery)\r\n \r\n-console.log('vfsv')\r\n+console.log('vfssdfv')\r\n"
+                },
+                {
+                    "date": 1676592330798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,5 +42,5 @@\n     })\r\n   }\r\n )(jQuery)\r\n \r\n-console.log('vfssdfv')\r\n+console.log('vfv')\r\n"
+                },
+                {
+                    "date": 1676592357673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   lenis.raf(time)\r\n   requestAnimationFrame(raf)\r\n }\r\n \r\n-requestAnimationFrame(raf)(\r\n+requestAnimationFrame(raf)\r\n   // faq -------------------------------------------\r\n   function ($) {\r\n     $('.accordion__title').on('click', function () {\r\n       $(this).children('.accordion__arrow').toggleClass('rotate')\r\n"
+                },
+                {
+                    "date": 1676592412137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   lenis.raf(time)\r\n   requestAnimationFrame(raf)\r\n }\r\n \r\n-requestAnimationFrame(raf)\r\n+requestAnimationFrame(raf)(\r\n   // faq -------------------------------------------\r\n   function ($) {\r\n     $('.accordion__title').on('click', function () {\r\n       $(this).children('.accordion__arrow').toggleClass('rotate')\r\n"
+                },
+                {
+                    "date": 1676592427323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,10 @@\n   lenis.raf(time)\r\n   requestAnimationFrame(raf)\r\n }\r\n \r\n-requestAnimationFrame(raf)(\r\n+requestAnimationFrame(raf)\r\n+//\r\n   // faq -------------------------------------------\r\n   function ($) {\r\n     $('.accordion__title').on('click', function () {\r\n       $(this).children('.accordion__arrow').toggleClass('rotate')\r\n"
+                },
+                {
+                    "date": 1676592432959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,10 @@\n   lenis.raf(time)\r\n   requestAnimationFrame(raf)\r\n }\r\n \r\n-requestAnimationFrame(raf)\r\n-//\r\n+requestAnimationFrame(raf)(\r\n+  //\r\n   // faq -------------------------------------------\r\n   function ($) {\r\n     $('.accordion__title').on('click', function () {\r\n       $(this).children('.accordion__arrow').toggleClass('rotate')\r\n"
+                },
+                {
+                    "date": 1676592448634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,23 +25,21 @@\n   lenis.raf(time)\r\n   requestAnimationFrame(raf)\r\n }\r\n \r\n-requestAnimationFrame(raf)(\r\n-  //\r\n-  // faq -------------------------------------------\r\n-  function ($) {\r\n-    $('.accordion__title').on('click', function () {\r\n-      $(this).children('.accordion__arrow').toggleClass('rotate')\r\n-      $('.accordion__arrow').not($(this).children('.accordion__arrow')).removeClass('rotate')\r\n-      $(this).next().slideToggle(800)\r\n-      $('.accordion__text').not($(this).next()).slideUp('fast')\r\n+//\r\n+// faq -------------------------------------------\r\n+;(function ($) {\r\n+  $('.accordion__title').on('click', function () {\r\n+    $(this).children('.accordion__arrow').toggleClass('rotate')\r\n+    $('.accordion__arrow').not($(this).children('.accordion__arrow')).removeClass('rotate')\r\n+    $(this).next().slideToggle(800)\r\n+    $('.accordion__text').not($(this).next()).slideUp('fast')\r\n \r\n-      // $(this).offset().top-\"distance from top\"}, \"scroll speed\");}, \"animation delay depending on inner content length\");\r\n-      setTimeout(() => {\r\n-        $('html').animate({ scrollTop: $(this).offset().top - 180 }, 800)\r\n-      }, 400)\r\n-    })\r\n-  }\r\n-)(jQuery)\r\n+    // $(this).offset().top-\"distance from top\"}, \"scroll speed\");}, \"animation delay depending on inner content length\");\r\n+    setTimeout(() => {\r\n+      $('html').animate({ scrollTop: $(this).offset().top - 180 }, 800)\r\n+    }, 400)\r\n+  })\r\n+})(jQuery)\r\n \r\n console.log('vfv')\r\n"
+                },
+                {
+                    "date": 1676592461423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n   lenis.raf(time)\r\n   requestAnimationFrame(raf)\r\n }\r\n \r\n+requestAnimationFrame(raf)\r\n //\r\n // faq -------------------------------------------\r\n ;(function ($) {\r\n   $('.accordion__title').on('click', function () {\r\n"
+                },
+                {
+                    "date": 1676592505284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   lenis.raf(time)\r\n   requestAnimationFrame(raf)\r\n }\r\n \r\n-requestAnimationFrame(raf)\r\n+// requestAnimationFrame(raf)\r\n //\r\n // faq -------------------------------------------\r\n ;(function ($) {\r\n   $('.accordion__title').on('click', function () {\r\n"
+                },
+                {
+                    "date": 1676592582268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n })\r\n \r\n function raf(time) {\r\n   lenis.raf(time)\r\n-  requestAnimationFrame(raf)\r\n+  // requestAnimationFrame(raf)\r\n }\r\n \r\n // requestAnimationFrame(raf)\r\n //\r\n"
+                },
+                {
+                    "date": 1676592604591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,12 +22,12 @@\n })\r\n \r\n function raf(time) {\r\n   lenis.raf(time)\r\n-  // requestAnimationFrame(raf)\r\n+  requestAnimationFrame(raf)\r\n }\r\n \r\n-// requestAnimationFrame(raf)\r\n+requestAnimationFrame(raf)\r\n //\r\n // faq -------------------------------------------\r\n ;(function ($) {\r\n   $('.accordion__title').on('click', function () {\r\n"
+                },
+                {
+                    "date": 1676592638063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,40 +7,4 @@\n import ScrollTrigger from 'gsap/ScrollTrigger '\r\n import $ from 'jquery'\r\n import jQuery from 'jquery'\r\n import SplitType from 'split-type'\r\n-\r\n-const lenis = new Lenis({\r\n-  duration: 1.2,\r\n-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou\r\n-  direction: 'vertical', // vertical, horizontal\r\n-  gestureDirection: 'vertical', // vertical, horizontal, both\r\n-  smooth: true,\r\n-  mouseMultiplier: 1.3,\r\n-  smoothTouch: false,\r\n-  touchMultiplier: 2,\r\n-  infinite: false,\r\n-})\r\n-\r\n-function raf(time) {\r\n-  lenis.raf(time)\r\n-  requestAnimationFrame(raf)\r\n-}\r\n-\r\n-requestAnimationFrame(raf)\r\n-//\r\n-// faq -------------------------------------------\r\n-;(function ($) {\r\n-  $('.accordion__title').on('click', function () {\r\n-    $(this).children('.accordion__arrow').toggleClass('rotate')\r\n-    $('.accordion__arrow').not($(this).children('.accordion__arrow')).removeClass('rotate')\r\n-    $(this).next().slideToggle(800)\r\n-    $('.accordion__text').not($(this).next()).slideUp('fast')\r\n-\r\n-    // $(this).offset().top-\"distance from top\"}, \"scroll speed\");}, \"animation delay depending on inner content length\");\r\n-    setTimeout(() => {\r\n-      $('html').animate({ scrollTop: $(this).offset().top - 180 }, 800)\r\n-    }, 400)\r\n-  })\r\n-})(jQuery)\r\n-\r\n-console.log('vfv')\r\n"
+                },
+                {
+                    "date": 1676592697232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,4 +7,40 @@\n import ScrollTrigger from 'gsap/ScrollTrigger '\r\n import $ from 'jquery'\r\n import jQuery from 'jquery'\r\n import SplitType from 'split-type'\r\n+\r\n+const lenis = new Lenis({\r\n+  duration: 1.2,\r\n+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou\r\n+  direction: 'vertical', // vertical, horizontal\r\n+  gestureDirection: 'vertical', // vertical, horizontal, both\r\n+  smooth: true,\r\n+  mouseMultiplier: 1.3,\r\n+  smoothTouch: false,\r\n+  touchMultiplier: 2,\r\n+  infinite: false,\r\n+})\r\n+\r\n+function raf(time) {\r\n+  lenis.raf(time)\r\n+  requestAnimationFrame(raf)\r\n+}\r\n+\r\n+requestAnimationFrame(raf)\r\n+//\r\n+// faq -------------------------------------------\r\n+;(function ($) {\r\n+  $('.accordion__title').on('click', function () {\r\n+    $(this).children('.accordion__arrow').toggleClass('rotate')\r\n+    $('.accordion__arrow').not($(this).children('.accordion__arrow')).removeClass('rotate')\r\n+    $(this).next().slideToggle(800)\r\n+    $('.accordion__text').not($(this).next()).slideUp('fast')\r\n+\r\n+    // $(this).offset().top-\"distance from top\"}, \"scroll speed\");}, \"animation delay depending on inner content length\");\r\n+    setTimeout(() => {\r\n+      $('html').animate({ scrollTop: $(this).offset().top - 180 }, 800)\r\n+    }, 400)\r\n+  })\r\n+})(jQuery)\r\n+\r\n+console.log('vfvff')\r\n"
+                },
+                {
+                    "date": 1676592734644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n   lenis.raf(time)\r\n   requestAnimationFrame(raf)\r\n }\r\n \r\n+console.log('vfvff')\r\n requestAnimationFrame(raf)\r\n //\r\n // faq -------------------------------------------\r\n ;(function ($) {\r\n@@ -41,6 +42,4 @@\n       $('html').animate({ scrollTop: $(this).offset().top - 180 }, 800)\r\n     }, 400)\r\n   })\r\n })(jQuery)\r\n-\r\n-console.log('vfvff')\r\n"
                 }
             ],
             "date": 1676589299865,
